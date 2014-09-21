@@ -1,5 +1,5 @@
 
-package me.jamiestorey.variables;
+package me.jamiestorey.java.variables;
 
 public class Words {
 
