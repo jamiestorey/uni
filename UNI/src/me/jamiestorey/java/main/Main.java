@@ -1,5 +1,7 @@
 
-package me.jamiestorey.java.gui.swing;
+package me.jamiestorey.java.main;
+
+import me.jamiestorey.java.gui.swing.Window;
 
 public class Main {
 
