@@ -1,5 +1,5 @@
 
-package me.jamiestorey.java.gui.swing;
+package com.jamiestorey.java.gui.swing;
 
 import java.awt.Dimension;
 

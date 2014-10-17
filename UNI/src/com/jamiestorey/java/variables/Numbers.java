@@ -1,5 +1,5 @@
 
-package me.jamiestorey.java.variables;
+package com.jamiestorey.java.variables;
 
 public class Numbers {
 

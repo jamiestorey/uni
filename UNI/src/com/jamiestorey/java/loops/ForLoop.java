@@ -1,7 +1,7 @@
 
-package me.jamiestorey.java.loops;
+package com.jamiestorey.java.loops;
 
-public class For {
+public class ForLoop {
 
 	public void runForLoop() {
 		for (int i = 0; i < 11; i++) {
