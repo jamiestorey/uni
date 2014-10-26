@@ -1,5 +1,5 @@
 
-package com.jamiestorey.uni.java.labs;
+package com.jamiestorey.uni.java.labs.week05;
 
 import java.util.Scanner;
 
@@ -9,55 +9,69 @@ import java.util.Scanner;
  * @author Jamie Storey
  * @version 23/10/2014
  */
-public class Week5Exercieses {
+public class Week5Exercieses
+{
 
 	private Scanner keyboard;
 	public final static int NO_OF_INFINITE_LOOPS = 5;
 
-	public Week5Exercieses() {
+	public Week5Exercieses()
+	{
 		keyboard = new Scanner(System.in);
 	}
 
-	public void ex1() {
+	public void ex1()
+	{
 		System.out.println("Enter a mark. (It must equal 0-100)");
 		int mark = keyboard.nextInt();
 		String grade = "";
-		if ((mark > 0) && (mark <= 100)) {
-			if (mark < 40) {
+		if ((mark > 0) && (mark <= 100))
+		{
+			if (mark < 40)
+			{
 				grade = "Fail";
 			}
-			else if ((mark >= 40) && (mark <= 49)) {
+			else if ((mark >= 40) && (mark <= 49))
+			{
 				grade = "Third";
 			}
-			else if ((mark >= 50) && (mark <= 59)) {
+			else if ((mark >= 50) && (mark <= 59))
+			{
 				grade = "Lower Second";
 			}
-			else if ((mark >= 60) && (mark <= 69)) {
+			else if ((mark >= 60) && (mark <= 69))
+			{
 				grade = "Upper Second";
 			}
-			else if (mark >= 70) {
+			else if (mark >= 70)
+			{
 				grade = "First";
 			}
 
 			System.out.println(mark + " is Grade: " + grade);
 		}
-		else {
-			if (mark < 0) {
+		else
+		{
+			if (mark < 0)
+			{
 				System.err.println("Mark entered was less than 0: " + mark);
 			}
-			else {
+			else
+			{
 				System.err.println("Mark entered was over 100: " + mark);
 			}
 
 		}
 	}
 
-	public void ex2() {
+	public void ex2()
+	{
 		System.out.println("Enter a grade inital");
 		String gradeChar = keyboard.next();
 		String grade = "";
 
-		switch (gradeChar) {
+		switch (gradeChar)
+		{
 			case "d":
 				grade = "Distinction";
 				break;
@@ -76,14 +90,17 @@ public class Week5Exercieses {
 			default:
 				System.err.println("Illegal character entered: " + gradeChar);
 		}
-		if (grade != "") {
+		if (grade != "")
+		{
 			System.out.println("Grade = " + grade);
 		}
 	}
 
-	public void ex3() {
+	public void ex3()
+	{
 		int count = 1;
-		while (count <= 10) {
+		while (count <= 10)
+		{
 			// System.out.println(count + "\t" + count * 2 + "\t" + count * 3);
 			System.out.printf("%d\t%d\t%d%n", count, count * 2, count * 3);
 			// times I created an infanite loop = 2
@@ -91,9 +108,11 @@ public class Week5Exercieses {
 		}
 	}
 
-	public void ex4() {
+	public void ex4()
+	{
 		int count = 1;
-		do {
+		do
+		{
 			System.out.printf("%d\t%d\t%d%n", count, count * 2, count * 3);
 			count++;
 		}
@@ -138,7 +157,8 @@ public class Week5Exercieses {
 	// System.out.println("Average is: " + average);
 	// }
 
-	public void ex5() {
+	public void ex5()
+	{
 		int count = 0;
 		double average;
 		int sum = 0;
@@ -147,7 +167,8 @@ public class Week5Exercieses {
 		int input = keyboard.nextInt();
 		sum += input;
 
-		while (input > 0) {
+		while (input > 0)
+		{
 			input = keyboard.nextInt();
 			sum += input;
 			count++;
@@ -158,7 +179,8 @@ public class Week5Exercieses {
 		System.out.println("The average is: " + average);
 	}
 
-	public void ex6() {
+	public void ex6()
+	{
 		int count = 0;
 		double average;
 		int sum = 0;
@@ -167,7 +189,8 @@ public class Week5Exercieses {
 		int input = keyboard.nextInt();
 		sum += input;
 
-		do {
+		do
+		{
 
 			input = keyboard.nextInt();
 			sum += input;
@@ -181,14 +204,16 @@ public class Week5Exercieses {
 		System.out.println("The average is: " + average);
 	}
 
-	public void ex7() {
+	public void ex7()
+	{
 		int count = 0;
 		int sum = 0;
 		System.out
 				.println("Enter some numbers greater than 0. Enter 0 to exit.");
 		int input = keyboard.nextInt();
 		sum += input;
-		while (input > 0) {
+		while (input > 0)
+		{
 			input = keyboard.nextInt();
 			sum += input;
 			count++;
@@ -196,50 +221,59 @@ public class Week5Exercieses {
 		System.out.println("The sum is: " + sum);
 	}
 
-	public void ex8() {
+	public void ex8()
+	{
 		int count = 0;
 		int sum = 0;
 		System.out
 				.println("Enter some numbers greater than 0. Enter 0 to exit.");
 		int input = keyboard.nextInt();
 		sum += input;
-		if (input < 0) {
+		if (input < 0)
+		{
 			System.err.println("You entered a negative number!");
 			return;
 		}
-		while (input > 0) {
+		while (input > 0)
+		{
 
 			input = keyboard.nextInt();
 			sum += input;
 			count++;
 		}
-		if (input < 0) {
+		if (input < 0)
+		{
 			System.err.println("You entered a negative number!");
 			return;
 		}
 		System.out.println("The sum is: " + sum);
 	}
 
-	public void ex9() {
+	public void ex9()
+	{
+		@SuppressWarnings("unused")
 		int count = 0;
 		int sum = 0;
 		System.out
 				.println("Enter some numbers greater than 0. Enter 0 to exit.");
 		int input = keyboard.nextInt();
 		sum += input;
-		if (input < 0) {
+		if (input < 0)
+		{
 			sum -= input;
 			System.err.println("You entered a negative number!");
 			input = keyboard.nextInt();
 			sum += input;
 		}
-		while (input > 0) {
+		while (input > 0)
+		{
 
 			input = keyboard.nextInt();
 			sum += input;
 			count++;
 		}
-		if (input < 0) {
+		if (input < 0)
+		{
 			sum -= input;
 			System.err
 					.println("You entered a negative number! Enter a new number");
