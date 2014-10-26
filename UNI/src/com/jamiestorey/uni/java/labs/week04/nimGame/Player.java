@@ -1,5 +1,5 @@
 
-package com.jamiestorey.uni.java.labs.week04.nimgame;
+package com.jamiestorey.uni.java.labs.week04.nimGame;
 
 /**
  * A Player fro a simple nim game.

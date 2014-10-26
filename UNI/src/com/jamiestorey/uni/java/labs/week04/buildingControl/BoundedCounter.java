@@ -1,5 +1,5 @@
 
-package com.jamiestorey.uni.java.labs.week04.buildingcontrol;
+package com.jamiestorey.uni.java.labs.week04.buildingControl;
 
 /**
  * A simple counter.
