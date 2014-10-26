@@ -1,5 +1,5 @@
 
-package com.jamiestorey.java.loops;
+package com.jamiestorey.uni.java.loops;
 
 public class ForLoop {
 

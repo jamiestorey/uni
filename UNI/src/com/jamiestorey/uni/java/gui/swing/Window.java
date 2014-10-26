@@ -1,5 +1,5 @@
 
-package com.jamiestorey.java.gui.swing;
+package com.jamiestorey.uni.java.gui.swing;
 
 import java.awt.Dimension;
 
@@ -14,6 +14,7 @@ public class Window {
 		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
+
 	}
 
 }
