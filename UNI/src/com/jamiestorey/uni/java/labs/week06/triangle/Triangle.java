@@ -82,13 +82,13 @@ public class Triangle
 		return false;
 	}
 
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (o == null) { return false; }
+		if (obj == null) { return false; }
 
-		if (!(o instanceof Triangle)) { return false; }
+		if (!(obj instanceof Triangle)) { return false; }
 
-		if (secondEquals(o))
+		if (secondEquals(obj))
 		{
 			return true;
 		}
