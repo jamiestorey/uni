@@ -104,9 +104,10 @@ public class Triangle
 		double a = p1.distanceTo(p2);
 		double b = p2.distanceTo(p3);
 		double c = p3.distanceTo(p1);
+
 		System.out.printf("A = %f B = %f C = %f\n", a, b, c);
 
-		double s = 0.5 * (a + b + c);
+		double s = (a + b + c) / 2;
 
 		double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
 		System.err.println("Area is " + area);

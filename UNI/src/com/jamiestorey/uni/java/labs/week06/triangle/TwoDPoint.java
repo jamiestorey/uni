@@ -47,8 +47,8 @@ public class TwoDPoint
 
 	public double distanceTo(TwoDPoint point)
 	{
-		double dx = x - point.getX();
-		double dy = y - point.getY();
+		double dx = x + point.getX();
+		double dy = y + point.getY();
 
 		// Math.hypot returns the sqrt (x^2 + y^2)
 		double distance = Math.hypot(dx, dy);
