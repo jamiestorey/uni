@@ -1,3 +1,4 @@
+
 package com.jamiestorey.uni.java.labs.week05;
 
 import java.util.Scanner;
@@ -29,27 +30,33 @@ public class Week5Exercieses
 			if (mark < 40)
 			{
 				grade = "Fail";
-			} else if ((mark >= 40) && (mark <= 49))
+			}
+			else if ((mark >= 40) && (mark <= 49))
 			{
 				grade = "Third";
-			} else if ((mark >= 50) && (mark <= 59))
+			}
+			else if ((mark >= 50) && (mark <= 59))
 			{
 				grade = "Lower Second";
-			} else if ((mark >= 60) && (mark <= 69))
+			}
+			else if ((mark >= 60) && (mark <= 69))
 			{
 				grade = "Upper Second";
-			} else if (mark >= 70)
+			}
+			else if (mark >= 70)
 			{
 				grade = "First";
 			}
 
 			System.out.println(mark + " is Grade: " + grade);
-		} else
+		}
+		else
 		{
 			if (mark < 0)
 			{
 				System.err.println("Mark entered was less than 0: " + mark);
-			} else
+			}
+			else
 			{
 				System.err.println("Mark entered was over 100: " + mark);
 			}
@@ -65,23 +72,23 @@ public class Week5Exercieses
 
 		switch (gradeChar)
 		{
-		case "d":
-			grade = "Distinction";
-			break;
-		case "m":
-			grade = "Merit";
-			break;
-		case "p":
-			grade = "Pass";
-			break;
-		case "f":
-			grade = "Fail";
-			break;
-		case "a":
-			grade = "Absent from assessment";
-			break;
-		default:
-			System.err.println("Illegal character entered: " + gradeChar);
+			case "d":
+				grade = "Distinction";
+				break;
+			case "m":
+				grade = "Merit";
+				break;
+			case "p":
+				grade = "Pass";
+				break;
+			case "f":
+				grade = "Fail";
+				break;
+			case "a":
+				grade = "Absent from assessment";
+				break;
+			default:
+				System.err.println("Illegal character entered: " + gradeChar);
 		}
 		if (grade != "")
 		{
@@ -108,7 +115,8 @@ public class Week5Exercieses
 		{
 			System.out.printf("%d\t%d\t%d%n", count, count * 2, count * 3);
 			count++;
-		} while (count <= 10);
+		}
+		while (count <= 10);
 	}
 
 	public void ex5()
@@ -149,7 +157,8 @@ public class Week5Exercieses
 			input = keyboard.nextInt();
 			sum += input;
 			count++;
-		} while (input > 0);
+		}
+		while (input > 0);
 
 		System.out.println("Sum: " + sum + "Count: " + count);
 		average = (double) sum / count;
@@ -159,6 +168,7 @@ public class Week5Exercieses
 
 	public void ex7()
 	{
+		@SuppressWarnings("unused")
 		int count = 0;
 		int sum = 0;
 		System.out
@@ -176,6 +186,7 @@ public class Week5Exercieses
 
 	public void ex8()
 	{
+		@SuppressWarnings("unused")
 		int count = 0;
 		int sum = 0;
 		System.out
