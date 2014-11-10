@@ -1,4 +1,3 @@
-
 package com.jamiestorey.uni.java.homework.hw3;
 
 import java.util.ArrayList;
@@ -50,8 +49,7 @@ public class AccountList
 		{
 			System.err
 					.println("Error: The index value you entered is either to low or too large.");
-		}
-		else
+		} else
 		{
 			accounts.get(accountEntry).printAccountDetails();
 		}
@@ -63,11 +61,6 @@ public class AccountList
 	 */
 	public void getAllAccounts()
 	{
-		// for (int i = 0; i < accounts.size(); i++)
-		// {
-		// accounts.get(i).printAccountDetails();
-		// }
-
 		for (Account account : accounts)
 		{
 			account.printAccountDetails();
@@ -105,15 +98,6 @@ public class AccountList
 	 */
 	public boolean removeAccount(String accountNumber)
 	{
-		// for (int i = 0; i < accounts.size(); i++)
-		// {
-		// if (accounts.get(i).getAccountNumber().equals(accountNumber))
-		// {
-		// accounts.remove(i);
-		// return true;
-		// }
-		// }
-
 		for (Account account : accounts)
 		{
 			if (account.getAccountNumber().equals(accountNumber))
@@ -137,20 +121,13 @@ public class AccountList
 	 */
 	public int search(String accountNumber)
 	{
-		// for (int i = 0; i < accounts.size(); i++)
-		// {
-		// if (accounts.get(i).getAccountNumber().equals(accountNumber))
-		// {
-		// return i;
-		// }
-		// }
-
 		for (Account account : accounts)
 		{
-			if (account.getAccountNumber().equals(accountNumber)) { return accounts
-					.indexOf(account); }
+			if (account.getAccountNumber().equals(accountNumber))
+			{
+				return accounts.indexOf(account);
+			}
 		}
-
 		return -1;
 	}
 }

@@ -1,5 +1,5 @@
 
-package com.jamiestorey.uni.java.labs.week07.exercises;
+package com.jamiestorey.uni.java.labs.week07.lectureExercises;
 
 /**
  * A class that maintains information on a book. This might form part of a

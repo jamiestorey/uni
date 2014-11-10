@@ -1,4 +1,3 @@
-
 package com.jamiestorey.uni.java.labs.week06.triangle;
 
 /**
@@ -47,27 +46,33 @@ public class TwoDPoint
 
 	public double distanceTo(TwoDPoint point)
 	{
-		double dx = x + point.getX();
-		double dy = y + point.getY();
+		double dx = x - point.getX();
+		double dy = y - point.getY();
 
 		// Math.hypot returns the sqrt (x^2 + y^2)
 		double distance = Math.hypot(dx, dy);
 		return distance;
 	}
 
+	@Override
 	public boolean equals(Object o)
 	{
-		if (o == null) { return false; }
+		if (o == null)
+		{
+			return false;
+		}
 
-		if (!(o instanceof TwoDPoint)) { return false; }
+		if (!(o instanceof TwoDPoint))
+		{
+			return false;
+		}
 
 		TwoDPoint otherPoint = (TwoDPoint) o;
 
 		if ((otherPoint.getX() == x) && (otherPoint.getY() == y))
 		{
 			return true;
-		}
-		else
+		} else
 		{
 			return false;
 		}
