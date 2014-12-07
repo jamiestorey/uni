@@ -52,7 +52,7 @@ public class AccountCollection
 		boolean found = false;
 		while (index < currentIndex && !found)
 		{
-			if (accounts[index].equals(accountNumber))
+			if (accounts[index].getAccountNumber().equals(accountNumber))
 			{
 				found = true;
 			}
@@ -83,6 +83,7 @@ public class AccountCollection
 			if (accounts[index] != null)
 			{
 				accounts[index].printAccountDetails();
+				System.out.println();
 			}
 		}
 	}
