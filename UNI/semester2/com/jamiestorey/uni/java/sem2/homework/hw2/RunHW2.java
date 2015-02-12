@@ -11,7 +11,7 @@ public class RunHW2
     private String name, id;
     private AccountList accounts;
     private PersonalAccount pa1, pa2;
-    private TradeAccount ta1, ta2;
+    private TradeAccount ta2;
     
     /**
      * Constructor for objects of class HW2Test
@@ -26,6 +26,11 @@ public class RunHW2
              
         accounts = new AccountList();        
         runTests();
+    }
+
+    public static void  main(String[] args)
+    {
+        new RunHW2("Jamie Storey", "w14017480");
     }
     
     /**
@@ -91,13 +96,13 @@ public class RunHW2
         try
         {
             // trade account with no initial points
-            ta1 = new TradeAccount ("Colin", "Cowdry","1002", 
-                                "3 Consett Crescent", "Consett", "CC3 3CC",
-                                "Cowdry Construction",
-                                "33 Chopwell Close", "Chopwell", "CD3 3CD",
-                                "GB333333");
+            TradeAccount ta1 = new TradeAccount("Colin", "Cowdry", "1002",
+                    "3 Consett Crescent", "Consett", "CC3 3CC",
+                    "Cowdry Construction",
+                    "33 Chopwell Close", "Chopwell", "CD3 3CD",
+                    "GB333333");
                   
-            accounts.addAccount(ta1);                    
+            accounts.addAccount(ta1);
             System.out.println(ta1);              
         }
         catch (Exception e)

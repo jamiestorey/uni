@@ -1,7 +1,7 @@
 package com.jamiestorey.uni.java.sem2.homework.hw2;
 import java.util.*;
 
-import com.jamiestorey.uni.java.homework.hw2.Account;
+
 
 
 public class AccountList
@@ -139,14 +139,7 @@ public class AccountList
         for (Account account : accounts)
         {
             noOfPoints+= account.getNoOfPoints();
-            if (account instanceof PersonalAccount)
-            {
-                noOfPersonalPoints += account.getNoOfPoints();
-            }
-            else
-            {
-                noOfTradePoints += account.getNoOfPoints();
-            }
+            noOfTradePoints += account.getNoOfPoints();
         }
         myString = "Points held in personal accounts: " +  noOfPersonalPoints;
         myString +="\nPoints held in trade accounts: " +  noOfTradePoints;

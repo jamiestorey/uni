@@ -1,8 +1,4 @@
 package com.jamiestorey.uni.java.sem2.homework.hw2;
-import com.jamiestorey.uni.java.homework.hw2.Account;
-import com.jamiestorey.uni.java.homework.hw2.Address;
-
-
 /**
  * Write a description of class TradeAccount here.
  * 

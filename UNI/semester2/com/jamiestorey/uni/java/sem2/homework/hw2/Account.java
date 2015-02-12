@@ -90,14 +90,7 @@ public abstract class Account
 
 		Account other = (Account) o;
 
-		if (other.toString().equals(toString()))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+        return other.toString().equals(toString());
 	}
 
 	/**
