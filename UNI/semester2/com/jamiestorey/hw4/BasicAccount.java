@@ -1,4 +1,4 @@
-package uni.java.sem2.homework.hw4;
+package com.jamiestorey.hw4;
 
 /**
  * The BasicAccount class holding basic functionality for CG0048, HW4.

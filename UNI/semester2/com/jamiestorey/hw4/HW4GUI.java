@@ -1,4 +1,4 @@
-package uni.java.sem2.homework.hw4;
+package com.jamiestorey.hw4;
 
 import javax.swing.*;
 import java.awt.*;

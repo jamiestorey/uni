@@ -1,4 +1,4 @@
-package uni.java.sem2.homework.hw4;
+package com.jamiestorey.hw4;
 
 /**
  * Represents a person's name which may be in 2 or 3 elements:
